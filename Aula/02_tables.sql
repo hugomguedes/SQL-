@@ -1,0 +1,1 @@
+.tables  -- mostra as tabelas do banco de dados

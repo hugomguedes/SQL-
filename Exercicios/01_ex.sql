@@ -1,0 +1,8 @@
+-- SELECIONE TODOS OS CLIENTES COM EMAIL CADASTRADO
+
+SELECT IdCliente,
+        FlEmail
+
+FROM clientes 
+
+WHERE FlEmail = 1

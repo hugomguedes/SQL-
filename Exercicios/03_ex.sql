@@ -1,0 +1,8 @@
+--SELECIONE TODOS OS CLIENTES COM MAIS DE 500 PONTOS
+
+SELECT IdCliente,
+        QtdePontos
+
+FROM clientes
+
+WHERE QtdePontos >500
