@@ -10,7 +10,8 @@ WITH tb_cliente_dia1 AS (
 
 SELECT substr(DtCriacao,1,10) AS QtDia,
         count(DISTINCT t1.IdCliente) AS QtClientes,
-        1. * count(DISTINCT t1.IdCliente) / (SELECT count(*) FROM tb_cliente_dia1) AS pctRetencao --proporçao
+        1. * count(DISTINCT t1.IdCliente) / (SELECT count(*) FROM tb_cliente_dia1) AS pctRetencao, --proporçao
+        1- 1. * count(DISTINCT t1.IdCliente) / (SELECT count(*) FROM tb_cliente_dia1) AS pctChurn
 FROM tb_cliente_dia1 AS t1
 
 LEFT JOIN transacoes AS t2
